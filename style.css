@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-image: url(img/reussir-reunions-de-travail.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.topbar {
+    background-color: rgb(15, 88, 15);
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .left {
+    display: flex;
+    color: #fff;
+}
+
+.topbar .left p.fri {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+ 
+.topbar .left p.fri i,
+.topbar .left p.phone i {
+    margin-right: 10px;
+}
+.topbar .left p.phone {
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.topbar .right a {
+    border-left: 1px solid #fff;
+    margin-right: 20px;
+    padding-left: 20px;
+    color: #fff;
+
+}
+
+.topbar .right a:last-child {
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
