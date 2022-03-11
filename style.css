@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/reussir-reunions-de-travail.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6)50%), url(img/reussir-reunions-de-travail.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,40 +18,51 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
 }
 
 .topbar .left {
     display: flex;
+    align-items: center;
     color: #fff;
 }
 
-.topbar .left p.fri {
+.topbar .left p.fri,
+.topbar .left p.phone {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     margin-right: 20px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 5px;
+    padding: 15px;
     margin-top: 5px;
     font-size: 15px;
+}
+
+.topbar .left p.fri {
+    margin-right: 0;
+}
+
+.topbar .left p.phone {
+    border-left: none;
 }
  
 .topbar .left p.fri i,
 .topbar .left p.phone i {
     margin-right: 10px;
 }
-.topbar .left p.phone {
-    border-right: 1px solid #fff;
-    padding-right: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-size: 15px;
-}
 
+
+
+
+.topbar .right {
+    display: flex;
+    align-items: center;
+}
 .topbar .right a {
     border-left: 1px solid #fff;
-    margin-right: 20px;
-    padding-left: 20px;
+    padding: 15px;
     color: #fff;
 
 }
@@ -59,6 +70,7 @@ body {
 .topbar .right a:last-child {
     border-right: 1px solid #fff;
     padding-right: 20px;
+    padding: 15px;
 }
 
 header {
@@ -98,12 +110,12 @@ header .menu a:focus {
 section {
     margin-left: 130px;
     color: #fff;
-    width: 420px;
+    width: 450px;
 } 
 
 section h4 {
     color:rgb(9, 248, 9);
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 10px;
     margin-top: 50px;
 }
@@ -111,6 +123,7 @@ section h4 {
 section h1 {
     margin-top: 0;
     font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
@@ -119,17 +132,58 @@ section p {
     font-size: 12px;
 }
 
-section button {
+section a button{
     background-color: rgb(9, 248, 9);
     border-radius: 20px 20px;
+    color: #fff;
     padding: 10px 10px;
     border: none;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 
-section button a {
+section a {
     text-decoration: none;
     color: #fff;
+    font-size: 13px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9, 248, 9);
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 0;
+    color: #fff;
+    height: 120px;
+}
+
+footer h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+footer p {
+    margin: 0;
+    
+}
+
+footer a button {
+    background-color: rgb(9, 248, 9);
+    border-radius: 20px 20px;
+    padding: 10px 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
     font-size: 13px;
 }
